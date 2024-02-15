@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html, body{
+height: 100%;
+width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin:auto;
+    transform: translateY(5rem);
+    height: 70%;
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 5%;
+}
+
+
+.head{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:16%;
+    line-height: 2rem;
+}
+
+.animation-h3{
+    animation: blink 1s alternate infinite;
+}
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 42%;
+    padding: 1rem 2rem;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    height: 80%;
+    width: 45%;
+    max-width: 11rem;
+    /* flex-basis: 50%;  */
+    border: 5px solid black;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+#box-0{
+    background-color: #f99b45;
+}
+#box-1{
+    background-color: #d95980;
+
+}
+#box-2{
+    background-color: #819ff9;
+}
+#box-3{
+    background-color: #63aac0;
+
+}
+
+
+@keyframes blink{
+    0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 0.7;
+      }
+      100% {
+        opacity: 1;
+      }
+}
+
+/***************************** JavaScript Classes **********************************/
+
+.gameflash{
+    background-color: white !important;
+}
+
+.userflash{
+    background-color: lightgreen !important;
+}
+
+h3 > p {
+    margin:0;
+    padding: 0;
+    line-height: 1rem ;
+}
+
+.span-go{
+    color: red;
+}
